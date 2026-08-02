@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Surya Kiran - Full-Stack Developer & AI Enthusiast Portfolio. Specialized in building modern web applications and integrating AI solutions.">
+    <meta name="author" content="Surya Kiran">
+    <title>Surya Kiran | Full-Stack Developer & AI Enthusiast</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Styling -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="nav-container">
+            <a href="#home" class="logo" id="nav-logo">
+                <span class="logo-accent">&lt;</span>SuryaKiran<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <nav class="navbar" id="main-navbar">
+                <a href="#home" class="nav-link active" id="link-home">Home</a>
+                <a href="#about" class="nav-link" id="link-about">About</a>
+                <a href="#skills" class="nav-link" id="link-skills">Skills</a>
+                <a href="#projects" class="nav-link" id="link-projects">Projects</a>
+                <a href="#contact" class="nav-link" id="link-contact">Contact</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="assets/kiran_resume.pdf" target="_blank" class="btn btn-outline nav-cta-btn" id="nav-resume-btn">
+                    <span>Resume</span>
+                    <i data-lucide="external-link"></i>
+                </a>
+                <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">
+                    <i data-lucide="menu" class="menu-icon"></i>
+                    <i data-lucide="x" class="close-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav-drawer">
+        <nav class="mobile-navbar">
+            <a href="#home" class="mobile-nav-link" id="mob-link-home">Home</a>
+            <a href="#about" class="mobile-nav-link" id="mob-link-about">About</a>
+            <a href="#skills" class="mobile-nav-link" id="mob-link-skills">Skills</a>
+            <a href="#projects" class="mobile-nav-link" id="mob-link-projects">Projects</a>
+            <a href="#contact" class="mobile-nav-link" id="mob-link-contact">Contact</a>
+            <a href="assets/kiran_resume.pdf" target="_blank" class="btn btn-outline mob-resume-btn" id="mob-resume-btn">
+                <span>Resume</span>
+                <i data-lucide="external-link"></i>
+            </a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section section-padding">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-container scroll-reveal">
+                        <span class="pulse-indicator"></span>
+                        <span class="badge-text">Available for Opportunities</span>
+                    </div>
+                    <h1 class="hero-title scroll-reveal">
+                        Hi, I'm <span class="text-gradient">Surya Kiran</span>
+                    </h1>
+                    <h2 class="hero-subtitle scroll-reveal">
+                        I am a <span class="typing-text" id="typing-text">Full-Stack Developer</span><span class="typed-cursor">|</span>
+                    </h2>
+                    <p class="hero-description scroll-reveal">
+                        Full-stack developer focused on building modern web applications and integrating AI to create smart, real-world solutions.
+                    </p>
+                    <div class="hero-ctas scroll-reveal">
+                        <a href="#projects" class="btn btn-primary" id="hero-view-projects">
+                            <span>View Work</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary" id="hero-contact-me">
+                            <span>Let's Talk</span>
+                        </a>
+                    </div>
+                    <div class="social-links-hero scroll-reveal">
+                        <a href="https://github.com/kiranmedida" target="_blank" aria-label="GitHub" class="social-icon-link" id="hero-github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/medida-surya-kiran-11570332a" target="_blank" aria-label="LinkedIn" class="social-icon-link" id="hero-linkedin">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="https://leetcode.com/u/LdrKa1DXYg" target="_blank" aria-label="LeetCode" class="social-icon-link" id="hero-leetcode">
+                            <i data-lucide="code-2"></i>
+                        </a>
+                        <a href="mailto:medidakiran9009@gmail.com" aria-label="Email" class="social-icon-link" id="hero-email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper scroll-reveal">
+                    <div class="image-inner-container">
+                        <img src="assets/profile.jpeg" alt="Surya Kiran Portrait" class="profile-image" id="profile-photo-img">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll Down">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About & Stats Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Bridging the gap between robust backend APIs, fluid frontend UIs, and intelligent AI models.</p>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-text scroll-reveal">
+    <h3>Who I Am</h3>
+
+    <p>
+        I'm <strong>Surya Kiran</strong>, a passionate Full-Stack Developer who enjoys building scalable web applications and integrating modern AI capabilities to create intelligent user experiences. I love transforming ideas into real-world software that is secure, efficient, and user-centric.
+    </p>
+
+    <p>
+        I specialize in the MERN stack, designing responsive frontend interfaces, developing robust backend systems, building RESTful APIs, and working with databases. I also enjoy integrating Generative AI into applications to deliver smarter and more personalized solutions.
+    </p>
+
+    <p>
+        My projects, including <strong>TripPilot</strong>, <strong>AI Mock Interview Platform</strong>, and <strong>Scribble</strong>, have strengthened my skills in software architecture, authentication & authorization, API development, database design, and modern web technologies.
+    </p>
+
+    <p>
+        Beyond development, I continuously improve my problem-solving skills through Data Structures & Algorithms, explore emerging AI technologies, and stay up to date with modern software engineering practices.
+    </p>
+</div>
+                    <div class="about-stats scroll-reveal">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="folder-git-2"></i>
+                            </div>
+                            <span class="stat-number" data-target="4">4</span>
+                            <span class="stat-label">Core Projects</span>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="award"></i>
+                            </div>
+                            <span class="stat-number" data-target="12">12+</span>
+                            <span class="stat-label">Key Skills</span>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="code-2"></i>
+                            </div>
+                            <span class="stat-number" data-target="100">100+</span>
+                            <span class="stat-label">LeetCode Solved</span>
+                        </div>
+                        
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i data-lucide="git-commit"></i>
+                            </div>
+                            <span class="stat-number" data-target="250">250+</span>
+                            <span class="stat-label">GitHub Contributions</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">A collection of technologies, languages, and tools I use to bring ideas to life.</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <!-- Languages -->
+                    <div class="skills-card scroll-reveal">
+                        <div class="skills-card-header">
+                            <i data-lucide="terminal" class="skills-card-icon"></i>
+                            <h3>Languages</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skills-card scroll-reveal">
+                        <div class="skills-card-header">
+                            <i data-lucide="layout" class="skills-card-icon"></i>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">React.js</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">HTML5</span>
+                            <span class="skill-tag">CSS3</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="skills-card scroll-reveal">
+                        <div class="skills-card-header">
+                            <i data-lucide="cpu" class="skills-card-icon"></i>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express.js</span>
+                            <span class="skill-tag">RESTful APIs</span>
+                            <span class="skill-tag">JWT Authentication</span>
+                        </div>
+                    </div>
+
+                    <!-- Databases -->
+                    <div class="skills-card scroll-reveal">
+                        <div class="skills-card-header">
+                            <i data-lucide="database" class="skills-card-icon"></i>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Developer Tools -->
+                    <div class="skills-card scroll-reveal">
+                        <div class="skills-card-header">
+                            <i data-lucide="wrench" class="skills-card-icon"></i>
+                            <h3>Developer Tools</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">VS Code</span>
+                            <span class="skill-tag">Postman</span>
+                            <span class="skill-tag">Jupyter Notebook</span>
+                            <span class="skill-tag">Vercel</span>
+                        </div>
+                    </div>
+
+                    <!-- Concepts -->
+                    <div class="skills-card scroll-reveal">
+                        <div class="skills-card-header">
+                            <i data-lucide="book-open" class="skills-card-icon"></i>
+                            <h3>Concepts</h3>
+                        </div>
+                        <div class="skills-tags">
+                            <span class="skill-tag">Data Structures & Algorithms</span>
+                            <span class="skill-tag">Object-Oriented Programming</span>
+                            <span class="skill-tag">Database Management Systems</span>
+                            <span class="skill-tag">Operating Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Some of my recent full-stack applications showcasing modern architectures and AI integration.</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: TripPilot -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-image-container">
+                            <img src="assets/trippilot.png" alt="TripPilot" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://github.com/kiranmedida/TripPilot-AI-Trip-Planner-" target="_blank" class="project-overlay-link" aria-label="View Source">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">AI Travel Suite</span>
+                            <h3 class="project-title">TripPilot – AI Travel Management</h3>
+                            <p class="project-description">
+                                A full-stack AI travel management platform leveraging Generative AI to create custom itineraries. Includes trip planning, expense tracking, notes, packing management, and secure JWT role authorization.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>Groq AI</span>
+                                <span>Tailwind CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kiranmedida/TripPilot-AI-Trip-Planner-" target="_blank" class="btn btn-sm btn-primary">
+                                    <span>Code</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                                <a href="https://trip-pilot-ai-trip-planner.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+    <span>Live Demo</span>
+    <i data-lucide="external-link"></i>
+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: AI Mock Interview Platform -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-image-container">
+                            <img src="assets/interview_ai.png" alt="AI Interview Platform" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://github.com/kiranmedida/interview-ai-platform" target="_blank" class="project-overlay-link" aria-label="View Source">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">EdTech & AI</span>
+                            <h3 class="project-title">AI Mock Interview Platform</h3>
+                            <p class="project-description">
+                                An AI-powered preparation platform dynamically generating technical/HR questions. Supports real-time answer evaluation, scoring breakdown, safe JWT authentication, and historical session logs.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>Groq AI</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kiranmedida/interview-ai-platform" target="_blank" class="btn btn-sm btn-primary">
+                                    <span>Code</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                                <a href="https://interview-ai-platform-drab.vercel.app/" target="_blank" class="btn btn-sm btn-primary">
+    <span>Live Demo</span>
+    <i data-lucide="external-link"></i>
+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: E-Commerce Website -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-image-container">
+                            <img src="assets/ecommerce.png" alt="Full-Stack E-Commerce" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://github.com/kiranmedida/mern-ecommerce-website" target="_blank" class="project-overlay-link" aria-label="View Source">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web App</span>
+                            <h3 class="project-title">Full-Stack E-Commerce</h3>
+                            <p class="project-description">
+                                A feature-rich online storefront containing secure authentication, catalog search/filter, a reactive shopping cart system, dynamic product details, and persistent user checkout tracking.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kiranmedida/mern-ecommerce-website" target="_blank" class="btn btn-sm btn-primary">
+                                    <span>Code</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                                    <a href="https://mern-ecommerce-frontend-gyuw.onrender.com/" target="_blank" class="btn btn-sm btn-primary">
+    <span>Live Demo</span>
+    <i data-lucide="external-link"></i>
+</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: MERN Notes App -->
+                    <div class="project-card scroll-reveal">
+                        <div class="project-image-container">
+                            <img src="assets/notes.png" alt="MERN Notes App" class="project-image">
+                            <div class="project-overlay">
+                                <a href="https://github.com/kiranmedida/mern-notes-app" target="_blank" class="project-overlay-link" aria-label="View Source">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Productivity</span>
+                            <h3 class="project-title">MERN Notes App</h3>
+                            <p class="project-description">
+                                A elegant notes manager built with absolute CRUD functions, secure routes, note tagging/searching, responsive grids, and an intuitive client light/dark toggle layout.
+                            </p>
+                            <div class="project-tech-stack">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/kiranmedida/mern-notes-app" target="_blank" class="btn btn-sm btn-primary">
+                                    <span>Code</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </a>
+                                <a href="https://medidakiran-mern-stack-notes-site.netlify.app/" target="_blank" class="btn btn-sm btn-primary">
+    <span>Live Demo</span>
+    <i data-lucide="external-link"></i>
+</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-divider"></div>
+                    <p class="section-subtitle">Let's discuss how we can work together or build your next project.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <div class="contact-info-panel scroll-reveal">
+                        <h3>Connect With Me</h3>
+                        <p class="contact-panel-desc">
+                            Feel free to reach out for project proposals, job opportunities, or just a friendly chat about full-stack development and AI.
+                        </p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <i data-lucide="mail"></i>
+                                </div>
+                                <div class="contact-method-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:medidakiran9009@gmail.com" id="contact-email">medidakiran9009@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                                </div>
+                                <div class="contact-method-details">
+                                    <h4>LinkedIn</h4>
+                                    <a href="https://www.linkedin.com/in/medida-surya-kiran-11570332a" target="_blank" id="contact-linkedin">linkedin.com/in/medida-surya-kiran-11570332a</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                                </div>
+                                <div class="contact-method-details">
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/kiranmedida" target="_blank" id="contact-github">github.com/kiranmedida</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-method-card">
+                                <div class="contact-method-icon">
+                                    <i data-lucide="code-2"></i>
+                                </div>
+                                <div class="contact-method-details">
+                                    <h4>LeetCode</h4>
+                                    <a href="https://leetcode.com/u/LdrKa1DXYg" target="_blank" id="contact-leetcode">leetcode.com/u/LdrKa1DXYg</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-panel scroll-reveal">
+                        <form id="contact-form" action="https://formspree.io/f/xnqkyrpe" method="POST">
+                            <div class="form-group-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject" placeholder="Project Discussion" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="form-submit-btn">
+                                <span>Send Message</span>
+                                <i data-lucide="send"></i>
+                            </button>
+                            <div class="form-feedback-message" id="form-feedback"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="copyright">&copy; <span id="current-year">2026</span> Surya Kiran. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="footer-icons">
+                <a href="https://github.com/kiranmedida" target="_blank" aria-label="GitHub" id="foot-github"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg></a>
+                <a href="https://www.linkedin.com/in/medida-surya-kiran-11570332a" target="_blank" aria-label="LinkedIn" id="foot-linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+                <a href="mailto:medidakiran9009@gmail.com" aria-label="Email" id="foot-email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
